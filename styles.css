@@ -17,6 +17,14 @@ html {
   background: #ff726f;
   float: left;
 }
+.choose {
+  justify-content: center;
+  text-align: center;
+  margin-top: 65%;
+}
+.select {
+  margin-top: 10%;
+}
 .right-container {
   height: 100vh;
   width: 100%;
