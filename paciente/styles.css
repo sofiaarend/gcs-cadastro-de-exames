@@ -8,6 +8,14 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
 }
+body {
+  background-color: white;
+  color: rgb(29, 29, 29);
+}
+.dark-mode {
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
 .grid {
 	height: 100vh;
 	display: grid;
