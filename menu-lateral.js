@@ -16,7 +16,7 @@ $('#funcao').change(function() {
 			$('#usu_pac').show();
 			break;
 		default:
-			window.location.href = "index.html";
+			window.location.href = base_url+"index.html";
 			break;
 	}
 });
@@ -26,16 +26,16 @@ $('.usuario').change(function() {
 	sessionStorage.setItem("usuario", usuario);
 	switch (tipo_usuario) {
 		case 'adm':
-			window.location.href = "admin/index.html";
+			window.location.href = base_url+"admin/index.html";
 			break;
 		case 'med':
-			window.location.href = "medico/index.html";
+			window.location.href = base_url+"medico/index.html";
 			break;
 		case 'pac':
-			window.location.href = "paciente/index.html";
+			window.location.href = base_url+"paciente/index.html";
 			break;
 		default:
-			window.location.href = "index.html";
+			window.location.href = base_url+"index.html";
 			break;
 	}
 });
