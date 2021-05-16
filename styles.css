@@ -8,27 +8,12 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
 }
-.main {
-  display: flex;
+.grid {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
 }
-.left-container {
-  width: 35%;
-  height: 100vh;
-  background: #ff726f;
-  float: left;
-}
-.choose {
-  justify-content: center;
-  text-align: center;
-  margin-top: 65%;
-}
-.select {
-  margin-top: 10%;
-}
-.right-container {
-  height: 100vh;
-  width: 100%;
-}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -36,7 +21,7 @@ html {
   text-align: center;
   margin-top: 10%;
 }
-.title {
+.right-container .title {
   font-size: 3rem;
   line-height: 2.5rem;
   font-weight: 300;
