@@ -2,38 +2,51 @@
 <html>
 <head>
 	<title>Trabalho de GCS</title>
-	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="menu-lateral.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 	<main>
 		<div class="grid">
+			<!-- MENU LATERAL -->
 			<nav class="menu-lateral">
-				<div >
-					<p class="title">Escolher função</p>
-					<select class="funcao">
-						<option>Função</option>
+				<div class="wrapper">
+					<h1 class="title">Escolher função:</h1>
+					<select id="funcao" class="funcao">
+						<option value="null">Função</option>
 						<option value="adm">Administrador</option>
 						<option value="med">Médico</option>
 						<option value="pac">Paciente</option>
 					</select>
+
 					<select id="usu_adm" class="usuario">
-						<option>Usuário</option>
-						<option value="adm-1">Lucas</option>
+						<option value="null">Usuário</option>
+						<option value="adm-1">Maria</option>
+						<option value="adm-2">Lucas</option>
 					</select>
 					<select id="usu_med" class="usuario">
-						<option>Usuário</option>
-						<option value="med-1">Lucas</option>
+						<option value="null">Usuário</option>
+						<option value="med-1">João</option>
+						<option value="med-2">Clara</option>
 					</select>
 					<select id="usu_pac" class="usuario">
-						<option>Usuário</option>
-						<option value="pac-1">Lucas</option>
+						<option value="null">Usuário</option>
+						<option value="pac-1">Bruna</option>
+						<option value="pac-2">Mario</option>
+						<option value="pac-3">Carol</option>
+						<option value="pac-4">Julia</option>
 					</select>
 				</div>
 			</nav>
+			<!-- ------------ -->
 
 			<div class=""></div>
 		</div>
 	</main>
 </body>
 </html>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="menu-lateral.js"></script>
