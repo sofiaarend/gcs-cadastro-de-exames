@@ -21,3 +21,33 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }
+
+#Formulário {
+font-size: 30px;
+padding-top: 150px;
+}
+
+#listaExames {
+padding-left: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+select {
+  font-size: 15px;
+}
+li {
+  font-size: 15px;
+}
+
+.err {
+  color: red;
+  font-size: 14px;
+}
+
+#botao {
+padding-left: 25px;
+
+}

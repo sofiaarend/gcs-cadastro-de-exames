@@ -46,25 +46,44 @@
 
           	<!-- Right Container -->
           	<div class="right-container">
-						
-							<p>Selecione o exame a ser requisitado</p>
-						<ul>
-							<li>Colonoscopia <input type="checkbox" name="chk1"> </li>
-							<li>Ressonância Magnética <input type="checkbox" name="chk1"></li>
-							<li>Ressonância Magnética de Extremidades <input type="checkbox" name="chk1"></li>
-							<li>Tomografia <input type="checkbox" name="chk1"></li>
-							<li>TOMOGRAFIA MULTISLICE <input type="checkbox" name="chk1"></li>
-							<li>MAMOGRAFIA <input type="checkbox" name="chk1"></li>
-							<li>MAMOGRAFIA POR ESTEREOTAXIA <input type="checkbox" name="chk1"></li>
-							<li>Raio-X <input type="checkbox" name="chk1"></li>
-							<li>DENSITOMETRIA ÓSSEA <input type="checkbox" name="chk1"></li>
-							<li>ULTRASSONOGRAFIA <input type="checkbox" name="chk1"></li>
-							<li>ENDOSCOPIA <input type="checkbox" name="chk1"></li>
-							<li>Ecocardiograma bidimensional <input type="checkbox" name="chk1"></li>
 
+							<form>
+							<p><h1 id=Formulário>Selecione os dados da requisição de exame</h1></p>
+							<br>	<br>
+							<p><h3 id="Título">Paciente</h3></p>
+							<div class="wrapper">
+									<label id="nameField"></label>
+									<select name="paciente" id="tecno">
+										<option value="null">Usuário</option>
+    								<option value="pac-1">Bruna</option>
+    								<option value="pac-2">Mario</option>
+    								<option value="pac-3">Carol</option>
+    								<option value="pac-4">Julia</option>
+									</select><br>
+									<br>
+									<p><h3 id="Título">Data da Solicitação</h3></p>
+									<input type="date" name="data" min="2010-12-31" max="2025-12-31">
+							</div>
+							<br>
+								<p><h3 id="Título">Exame</h3></p>
+							<ul id=listaExames>
+							<li>Colonoscopia <input type="checkbox" class="check" name="chk1"> </li>
+							<li>Ressonância Magnética <input type="checkbox" class="check" name="chk2"></li>
+							<li>Ressonância Magnética de Extremidades <input type="checkbox" class="check" name="chk3"></li>
+							<li>Tomografia <input type="checkbox" class="check" name="chk4"></li>
+							<li>TomoGrafia Multislice <input type="checkbox" class="check" name="chk5"></li>
+							<li>Mamografia <input type="checkbox" class="check" name="chk6"></li>
+							<li>Mamografia por Estereotaxia <input type="checkbox" class="check" name="chk7"></li>
+							<li>Raio-X <input type="checkbox" class="check" name="chk8"></li>
+							<li>Densitometria Óssea <input type="checkbox" class="check" name="chk9"></li>
+							<li>Ultrassonografia <input type="checkbox" class="check" name="chk10"></li>
+							<li>Endoscopia <input type="checkbox" class="check" name="chk11"></li>
+							<li>Ecocardiograma bidimensional <input type="checkbox" class="check" name="chk12"></li>
+							<div class="err">Selecione Apenas Uma opção</div>
 						</ul>
-
-              
+						<br><br><br>
+						<div id="botao"><button>Enviar</button></div>
+					</form>
             </div>
             <!-- End Right Container -->
         </div>
