@@ -1,4 +1,10 @@
 var base_url = '../';
+var n = 0;
+function increment(){
+
+  n++;
+  return n;
+}
 
 var solicitacoes = [];
 const addSolic = (ev) => {
@@ -7,6 +13,7 @@ const addSolic = (ev) => {
   let currentDate = new Date().toISOString().split('T')[0];
   let solic = {
     id : currentDate,
+    n : increment(),
     paciente: document.getElementById('tecno').value,
     dataExame: document.getElementById('data').value,
     exame: document.getElementById('solicExames').value,
