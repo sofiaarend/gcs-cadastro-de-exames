@@ -44,54 +44,72 @@
     		</nav>
     		<!-- ------------ -->
 
-          	<!-- Right Container -->
-          	<div class="right-container">
-
+						<!-- Right Container -->
+						<div class="right-container">
+						
 							<form>
-							<p><h1 id=Formulário>Selecione os dados da requisição de exame</h1></p>
-							<br>	<br>
-							<p><h3 id="Título">Paciente</h3></p>
-							<div class="wrapper">
-									<label id="nameField"></label>
-									<select name="paciente" id="tecno">
-										<option value="null">Usuário</option>
-    								<option value="pac-1">Bruna</option>
-    								<option value="pac-2">Mario</option>
-    								<option value="pac-3">Carol</option>
-    								<option value="pac-4">Julia</option>
+								<p><h1 id=Formulário>Selecione os dados da requisição de exame</h1></p>
+								<br><br>
+								<p><h3 id="listMeds">Médico</h3></p>
+								<div class="wrapper">
+								<label id="nameField"></label>
+								<select name="medico" id="solic_med">
+									<option value="null">Solicitante</option>
+									<option value="João">João</option>
+									<option value="Clara">Clara</option>
+								</select><br><br>
+
+								<p><h3 id="listaPacs">Paciente</h3></p>
+								<div class="wrapper">
+								<label id="nameField"></label>
+								<select name="paciente" id="tecno">
+										<option value="null">Paciente</option>
+										<option value="Bruna">Bruna</option>
+										<option value="Mario">Mario</option>
+										<option value="Carol">Carol</option>
+										<option value="Julia">Julia</option>
 									</select><br>
 									<br>
-									<p><h3 id="Título">Data da Solicitação</h3></p>
-									<input type="date" name="data" min="2010-12-31" max="2025-12-31">
-							</div>
-							<br>
-								<p><h3 id="Título">Exame</h3></p>
-							<ul id=listaExames>
-							<li>Colonoscopia <input type="checkbox" class="check" name="chk1"> </li>
-							<li>Ressonância Magnética <input type="checkbox" class="check" name="chk2"></li>
-							<li>Ressonância Magnética de Extremidades <input type="checkbox" class="check" name="chk3"></li>
-							<li>Tomografia <input type="checkbox" class="check" name="chk4"></li>
-							<li>TomoGrafia Multislice <input type="checkbox" class="check" name="chk5"></li>
-							<li>Mamografia <input type="checkbox" class="check" name="chk6"></li>
-							<li>Mamografia por Estereotaxia <input type="checkbox" class="check" name="chk7"></li>
-							<li>Raio-X <input type="checkbox" class="check" name="chk8"></li>
-							<li>Densitometria Óssea <input type="checkbox" class="check" name="chk9"></li>
-							<li>Ultrassonografia <input type="checkbox" class="check" name="chk10"></li>
-							<li>Endoscopia <input type="checkbox" class="check" name="chk11"></li>
-							<li>Ecocardiograma bidimensional <input type="checkbox" class="check" name="chk12"></li>
-							<div class="err">Selecione Apenas Uma opção</div>
-						</ul>
-						<br><br><br>
-						<div id="botao"><button>Enviar</button></div>
-					</form>
-            </div>
-            <!-- End Right Container -->
-        </div>
-    </main>
-  </body>
-</html>
+									<p>
+									<h3 id="Título">Data da Solicitação</h3>
+									</p>
+									<input type="date" id="data" min="2010-12-31" max="2025-12-31">
+								</div>
+								<br>
+								<p>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="../menu-lateral.js"></script>
-<script type="text/javascript" src="../dark-mode.js"></script>
+									<p><h3 id="listaExames">Exame</h3></p>
+									<div class="wrapper">
+									<label id="nameField"></label>
+									<select name="exame" id="solicExames">
+										<option value="null">Exame</option>
+										<option value="Colonoscopia">Colonoscopia</option>
+										<option value="Ressonância Magnética">Ressonância Magnética</option>
+										<option value="Ressonância Magnética de Extremidades">Ressonância Magnética de Extremidades</option>
+										<option value="Tomografia">Tomografia</option>
+										<option value="TomoGrafia Multislice">TomoGrafia Multislice</option>
+										<option value="Mamografia">Mamografia</option>
+										<option value="Mamografia por Estereotaxiaa">Mamografia por Estereotaxia</option>
+										<option value="Raio-X">Raio-X</option>
+										<option value="Densitometria Óssea">Densitometria Óssea</option>
+										<option value="Ultrassonografia">Ultrassonografia</option>
+										<option value="Endoscopia">Endoscopia</option>
+										<option value="Ecocardiograma bidimensional">Ecocardiograma bidimensional</option>
+
+									</select>
+								</ul>
+								<br><br><br>
+								<div id="botao"><button>Enviar</button></div>
+							</form>
+						</div>
+						<!-- End Right Container -->
+						</div>
+						</main>
+						</body>
+						
+						</html>
+						
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+						<script type="text/javascript" src="app.js"></script>
+						<script type="text/javascript" src="../menu-lateral.js"></script>
+						<script type="text/javascript" src="../dark-mode.js"></script>
