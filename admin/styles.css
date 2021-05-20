@@ -21,6 +21,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }
+
 #pesquisa{
   width: 450px;
   height: 40px;
@@ -44,10 +45,37 @@ h2{
   border: none;
   color: white;
   padding: 15px 32px;
+
+
+.right-container h1{
+  font-size: 3rem;
+  margin: 2rem 4rem;
+
+}
+
+/*Henrique commit1 */
+
+#myTable{
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+thead{
+  font-size: 1rem;
+}
+
+#btn-medicos{
+  border-radius: 8px;
+  background-color: #53aff4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 16px;
+
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+
   margin: 2rem 12rem;
   cursor: pointer;
 }
@@ -67,4 +95,38 @@ h2{
 label{
   margin: 2rem 4rem;
   font-size: 2rem;
+
+  margin-top: 2rem ;
+  margin-left: 4rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+#btn-exames{
+  border-radius: 8px;
+  background-color: #53aff4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2rem 1.5rem;
+  cursor: pointer;
+}
+
+#btn-pacientes{
+  border-radius: 8px;
+  background-color: #53aff4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+
 }
