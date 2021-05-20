@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="../menu-lateral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Trabalho de GCS</title>
   </head>
 
@@ -45,7 +46,65 @@
         <!-- ------------ -->
 
         <!-- Right Container -->
-        <div class="right-container"></div>
+              <!--Henrique commit1-->
+        <div class="right-container">
+          <div class="container">
+          <h2>Buscar usuário pelo nome</h2>
+          <input type="text" id="pesquisa" onkeyup="pesquisarNome()">
+          <h2>Lista de usuários</h2>
+          <table id="myTable" border="1"><thead></thead>
+            <th>Nome</th>
+            <th> Função </th>
+            <th> Listagens </th>
+            <tbody id="tableBody">
+              <tr>
+                <td>João</td>
+                <td>médico</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Clara</td>
+                <td>médico</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bruna</td>
+                <td>paciente</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Mario</td>
+                <td>paciente</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Carol</td>
+                <td>paciente</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Julia</td>
+                <td>paciente</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Maria</td>
+                <td>administrador</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lucas</td>
+                <td>administrador</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+            </p>
+          </div>
+
+          <input type="button" id="btn-medicos" value="Gerar número de médicos" /> 
+          <input type="button" id="btn-pacientes"value="Gerar número de pacientes" /> 
+          <input type="button" id="btn-exames"value="Gerar número de exames" />
         <!-- End Right Container -->
       </div>
     </main>
