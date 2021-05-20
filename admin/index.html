@@ -43,9 +43,30 @@
           <button class="nav-item"><a role="button" onclick="darkmode()">Trocar o tema!</a></button>
         </nav>
         <!-- ------------ -->
-
+            
         <!-- Right Container -->
-        <div class="right-container"></div>
+
+          <div class="right-container">
+              <div class="container">
+                <h1 class="center">Bem vindo administrador!</h1>
+                <h2 class="center">Primeiro cadastre um usuário</h2>
+                <p>
+                  <form>
+                 <label>Nome:</label>
+                 <input id="taskName" type="text"/>
+                 <br>
+                 <label>Função:</label>
+                 <select id="funcaocadastro">
+                  <option value="administrador">Administrador</option>
+                  <option value="médico">Médico</option>
+                  <option value="paciente">Paciente</option>
+                </select>
+                 <br>
+                 <button onclick="submitForm(); window.location.reload();" type="button" id="submit">Cadastrar</button>
+                 </form>
+                </p><p>
+    
+        </div>
         <!-- End Right Container -->
       </div>
     </main>
