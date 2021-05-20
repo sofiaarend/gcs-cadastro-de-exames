@@ -21,3 +21,27 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }
+.lista{
+  margin-left: 375px;
+  margin-top: -600px;
+}
+#caixainput{
+  width: 600px;
+  height: 150px;
+  margin-top: 10px;
+}
+.exame{
+  margin-left: 375px;
+  margin-top: 70px;
+}
+
+#idinput{ 
+  margin-top: 10px;
+}
+#btn-button{
+  border-color: black;
+  border-width: 2px;
+  width: 172px;
+  height: 25px;
+  background-color: gray;
+}
