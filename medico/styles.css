@@ -4,32 +4,43 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background-color: white;
   color: rgb(29, 29, 29);
 }
+
 .dark-mode {
   background-color: rgb(29, 29, 29);
   color: white;
 }
+
 .grid {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }
 
+
 .wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
 }
 
 h1 {
 font-size: 30px;
-padding-top: 150px;
 padding-bottom: 32px;
 }
 
@@ -67,8 +78,26 @@ li {
   font-size: 14px;
 }
 
+.listar-exames {
+  margin-top: 64px;
+}
 
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 12px;
+}
 
-form {
-  padding-left: 40px;
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+  min-width: 128px;
 }

@@ -50,9 +50,10 @@
 
       <!-- Right Container -->
       <div class="right-container">
-        <form>
-          <h1 id=Formulário>Agendar Exame</h1>
-          <div class="wrapper">
+        <div class="wrapper">
+          <form>
+            <h1>Agendar Exame</h1>
+
             <label id="listMeds">Médico</label>
             <select name="medico" id="solic_med">
               <option value="null">Solicitante</option>
@@ -89,10 +90,30 @@
               <option value="Ecocardiograma bidimensional">Ecocardiograma bidimensional</option>
             </select>
 
-            <button type="button" id="enviar">Enviar</button>            
-        </form>
+            <button type="button" id="enviar">Enviar</button>
+          </form>
+
+          <div class="listar-exames">
+            <h1>Listar Exames</h1>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Médico</th>
+                  <th>Paciente</th>
+                  <th>Data da Solicitação</th>
+                  <th>Exame</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div>
   </main>
 </body>
 
