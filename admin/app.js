@@ -1,5 +1,6 @@
 var base_url = '../';
 
+
 $(document).ready(function ()
 {
     $("#btn-medicos").click(function ()
@@ -123,8 +124,16 @@ buildTable();
     
 }
 
+$(document).ready(function ()
+{
+    $("#btn-exames").click(function ()
+    {
+        alert("O número de solicitações é: "  + solicitacoes.length)
+    });
+}
+)
 
-
+document.getElementById("btn-exames-concluidos").disabled = true;
 
 
 
