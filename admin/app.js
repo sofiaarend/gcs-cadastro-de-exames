@@ -46,6 +46,14 @@ $(document).ready(function ()
 
 })
 
+$(document).ready(function ()
+{
+    $("#btn-autorizacoes").click(function ()
+    {
+        alert("O número de autorizações emitidas é 10.");
+    });
+})
+
 
 function pesquisarNome() {
     var input, filter, table, tr, td, i, txtValue;
