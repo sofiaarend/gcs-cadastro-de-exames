@@ -71,7 +71,7 @@ function pesquisarNome() {
 
 var table = document.getElementById("tableBody");
 
-const listaUsuarios = [];
+var listaUsuarios = [];
 
 window.addUserToTable = function addUserToTable(obj) {
   var row = table.insertRow(0);
@@ -90,6 +90,7 @@ window.submitForm = function submitForm() {
   var addTaskName = document.getElementById("taskName").value;
   var addTaskDate = document.getElementById("funcaocadastro").value;
   var taskSomething = getUserObj(addTaskName, addTaskDate);
+  listaUsuarios = JSON.parse(localStorage.getItem("task"));
   listaUsuarios.push(taskSomething);
   addUserToTable(taskSomething);
 };
