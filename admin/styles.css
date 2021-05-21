@@ -12,101 +12,68 @@ body {
   background-color: white;
   color: rgb(29, 29, 29);
 }
+span {
+  font-size: 2rem;
+  margin: 2rem 4rem;
+}
+h2 {
+  margin: 1.5rem 4rem;
+  font-size: 24px;
+}
+label {
+  margin: 2rem 4rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+thead {
+  font-size: 1rem;
+}
 .dark-mode {
   background-color: rgb(29, 29, 29);
   color: white;
 }
 .grid {
-	height: 100vh;
-	display: grid;
-	grid-template-columns: 1fr 3fr;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
-
-#pesquisa{
-  width: 450px;
-  height: 40px;
-  margin-left: 4rem;
-  margin-bottom: 2rem;
-}
-
-span{
-  font-size: 2rem;
-  margin: 2rem 4rem;
-}
-
-h2{
-  margin: 1.5rem 4rem;
-  font-size: 24px;
-}
-
-#submit{
-  border-radius: 8px;
-  background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  margin: 1rem 15rem;
-
-}
-
-.right-container h1{
+.right-container h1 {
   font-size: 3rem;
   margin: 2rem 4rem;
-
 }
-
-/*Henrique commit1 */
-
-#myTable{
+#myTable {
   font-size: 2rem;
   margin-left: 4rem;
 }
-
-thead{
-  font-size: 1rem;
-}
-
-#btn-medicos{
+#btn-medicos {
   border-radius: 8px;
-  background-color: #53aff4; /* Green */
+  background-color: #53aff4;
   border: none;
   color: white;
   padding: 15px 16px;
-
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
   margin: 2rem 1.5rem;
   cursor: pointer;
 }
-
-#taskName{
+#taskName {
   margin-bottom: 2rem;
   height: 25px;
 }
-
-#funcaocadastro{
+#funcaocadastro {
   margin-bottom: 2rem;
   height: 25px;
   width: 170px;
   margin-left: -12px;
 }
-
-label{
-  margin: 2rem 4rem;
-  font-size: 2rem;
-
-  margin-top: 2rem ;
-  margin-left: 4rem;
-  margin-right: 1.5rem;
-  cursor: pointer;
-}
-
-#btn-exames{
+#btn-exames {
   border-radius: 8px;
-  background-color: #53aff4; /* Green */
+  background-color: #53aff4;
   border: none;
   color: white;
   padding: 15px 16px;
@@ -117,10 +84,9 @@ label{
   margin: 2rem 1.5rem;
   cursor: pointer;
 }
-
-#btn-pacientes{
+#btn-pacientes {
   border-radius: 8px;
-  background-color: #53aff4; /* Green */
+  background-color: #53aff4;
   border: none;
   color: white;
   padding: 15px 16px;
@@ -130,12 +96,10 @@ label{
   font-size: 16px;
   margin: 1rem 1.5rem;
   cursor: pointer;
-
 }
-
-#btn-exames-concluidos{
+#btn-exames-concluidos {
   border-radius: 8px;
-  background-color: #53aff4; /* Green */
+  background-color: #53aff4;
   border: none;
   color: white;
   padding: 15px 16px;
@@ -144,5 +108,18 @@ label{
   display: inline-block;
   font-size: 16px;
   margin: 1rem 1.5rem;
-
+}
+#pesquisa {
+  width: 450px;
+  height: 40px;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+#submit {
+  border-radius: 8px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 1rem 15rem;
 }
