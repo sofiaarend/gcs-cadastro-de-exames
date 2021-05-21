@@ -54,6 +54,14 @@ $(document).ready(function ()
     });
 })
 
+$(document).ready(function ()
+{
+    $("#btn-percentual").click(function ()
+    {
+        alert("O percentual de autorizações com exames já realizados é 45%.");
+    });
+})
+
 
 function pesquisarNome() {
     var input, filter, table, tr, td, i, txtValue;
