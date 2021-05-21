@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-	  <link rel="stylesheet" type="text/css" href="../menu-lateral.css" />
-    <title>Trabalho de GCS</title>
-  </head>
 
-  <body onload="onload()">
-   	<main>
-        <div class="grid">
-    		<!-- MENU LATERAL -->
-    		<nav class="menu-lateral">
-    			<div class="wrapper">
-    				<h1 class="title">Escolher função:</h1>
-    				<select id="funcao" class="funcao">
-    					<option value="null">Função</option>
-    					<option value="adm">Administrador</option>
-    					<option value="med">Médico</option>
-    					<option value="pac">Paciente</option>
-    				</select>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="../menu-lateral.css" />
+  <title>Trabalho de GCS</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</head>
 
-    				<select id="usu_adm" class="usuario">
-    				</select>
-    				<select id="usu_med" class="usuario">
-    				</select>
-    				<select id="usu_pac" class="usuario">
-    				</select>
-    			</div>
-				<button class="nav-item"><a role="button" onclick="darkmode()">Trocar o tema!</a></button>
-    		</nav>
-    		<!-- ------------ -->
+<body onload="onload()">
+  <main>
+    <div class="grid">
+      <!-- MENU LATERAL -->
+      <nav class="menu-lateral">
+        <div class="wrapper">
+          <h1 class="title">Escolher função:</h1>
+          <select id="funcao" class="funcao">
+            <option value="null">Função</option>
+            <option value="adm">Administrador</option>
+            <option value="med">Médico</option>
+            <option value="pac">Paciente</option>
+          </select>
 
-						<!-- Right Container -->
-						<div class="right-container">
-						
-							<form class="form">
-								<p><h1 id=Formulário>Selecione os dados da requisição de exame</h1></p>
-								<br><br>
-								<p><h3 id="listMeds">Médico</h3></p>
-								<div class="wrapper">
-								<label id="nameField"></label>
-								<select name="medico" id="solic_med">
-									<option value="null">Solicitante</option>
-									<option value="João">João</option>
-									<option value="Clara">Clara</option>
-								</select><br><br>
+          <select id="usu_adm" class="usuario">
+          </select>
+          <select id="usu_med" class="usuario">
+          </select>
+          <select id="usu_pac" class="usuario">
+          </select>
+        </div>
+        <button class="nav-item"><a role="button" onclick="darkmode()">Trocar o tema!</a></button>
+      </nav>
+      <!-- ------------ -->
 
-								<p><h3 id="listaPacs">Paciente</h3></p>
-								<div class="wrapper">
-								<label id="nameField"></label>
-								<select name="paciente" id="tecno">
-										<option value="null">Paciente</option>
-										<option value="Bruna">Bruna</option>
-										<option value="Mario">Mario</option>
-										<option value="Carol">Carol</option>
-										<option value="Julia">Julia</option>
-									</select><br>
-									<br>
-									<p>
-									<h3 id="Título">Data da Solicitação</h3>
-									</p>
-									<input type="date" id="data" min="2010-12-31" max="2025-12-31">
-								</div>
-								<br>
-								<p>
+      <!-- Right Container -->
+      <div class="right-container">
+        <div class="wrapper">
+          <form>
+            <h1>Agendar Exame</h1>
 
-									<p><h3 id="listaExames">Exame</h3></p>
-									<div class="wrapper">
-									<label id="nameField"></label>
-									<select name="exame" id="solicExames">
-										<option value="null">Exame</option>
-										<option value="Colonoscopia">Colonoscopia</option>
-										<option value="Ressonância Magnética">Ressonância Magnética</option>
-										<option value="Ressonância Magnética de Extremidades">Ressonância Magnética de Extremidades</option>
-										<option value="Tomografia">Tomografia</option>
-										<option value="TomoGrafia Multislice">TomoGrafia Multislice</option>
-										<option value="Mamografia">Mamografia</option>
-										<option value="Mamografia por Estereotaxiaa">Mamografia por Estereotaxia</option>
-										<option value="Raio-X">Raio-X</option>
-										<option value="Densitometria Óssea">Densitometria Óssea</option>
-										<option value="Ultrassonografia">Ultrassonografia</option>
-										<option value="Endoscopia">Endoscopia</option>
-										<option value="Ecocardiograma bidimensional">Ecocardiograma bidimensional</option>
+            <label id="listMeds">Médico</label>
+            <select name="medico" id="solic_med">
+              <option value="null">Solicitante</option>
+              <option value="João">João</option>
+              <option value="Clara">Clara</option>
+            </select>
 
-									</select>
-								</ul>
-								<br><br><br>
-								<div>
-                  <button id="btn-button">Enviar</button>
-                </div>
-							</form>
+            <label id="listaPacs">Paciente</label>
+            <select name="paciente" id="tecno">
+              <option value="null">Paciente</option>
+              <option value="Bruna">Bruna</option>
+              <option value="Mario">Mario</option>
+              <option value="Carol">Carol</option>
+              <option value="Julia">Julia</option>
+            </select>
 
-						</div>
-						<!-- End Right Container -->
-						</div>
-						</main>
-						</body>
-						
-						</html>
-						
-						<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-						<script type="text/javascript" src="app.js"></script>
-						<script type="text/javascript" src="../menu-lateral.js"></script>
-						<script type="text/javascript" src="../dark-mode.js"></script>
+            <label id="Título">Data da Solicitação</label>
+            <input type="date" id="data" min="2010-12-31" max="2025-12-31">
+
+            <label id="listaExames">Exame</label>
+            <select name="exame" id="solicExames">
+              <option value="null">Exame</option>
+              <option value="Colonoscopia">Colonoscopia</option>
+              <option value="Ressonância Magnética">Ressonância Magnética</option>
+              <option value="Ressonância Magnética de Extremidades">Ressonância Magnética de Extremidades</option>
+              <option value="Tomografia">Tomografia</option>
+              <option value="TomoGrafia Multislice">TomoGrafia Multislice</option>
+              <option value="Mamografia">Mamografia</option>
+              <option value="Mamografia por Estereotaxiaa">Mamografia por Estereotaxia</option>
+              <option value="Raio-X">Raio-X</option>
+              <option value="Densitometria Óssea">Densitometria Óssea</option>
+              <option value="Ultrassonografia">Ultrassonografia</option>
+              <option value="Endoscopia">Endoscopia</option>
+              <option value="Ecocardiograma bidimensional">Ecocardiograma bidimensional</option>
+            </select>
+
+            <button type="button" id="enviar">Enviar</button>
+          </form>
+
+          <div class="listar-exames">
+            <h1>Listar Exames</h1>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Médico</th>
+                  <th>Paciente</th>
+                  <th>Data da Solicitação</th>
+                  <th>Exame</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>
+
+<script type="text/javascript" src="../menu-lateral.js"></script>
+<script type="text/javascript" src="../dark-mode.js"></script>

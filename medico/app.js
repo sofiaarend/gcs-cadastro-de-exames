@@ -1,32 +1,34 @@
+
 var base_url = '../';
 var n = 0;
-function increment(){
 
+function increment() {
   n++;
   return n;
 }
 
-var solicitacoes = [];
-const addSolic = (ev) => {
-  ev.preventDefault();
-
-  let currentDate = new Date().toISOString().split('T')[0];
-  let solic = {
-    id : currentDate,
-    n : increment(),
-    paciente: document.getElementById('tecno').value,
-    dataExame: document.getElementById('data').value,
-    exame: document.getElementById('solicExames').value,
-    med: document.getElementById('solic_med').value,
-  }
-  solicitacoes.push(solic);
-  document.forms[0].reset();
-
-  console.warn('added', {solicitacoes});
-  let pre = document.querySelector('#msg pre');
-}
-document.addEventListener('DOMContentLoaded', ()=>{
-  document.getElementById('botao').addEventListener('click', addSolic);
+$(document).ready(function() {
+  $('#enviar').on('click', function() {
+    var solicitacoes;
+  
+    if(localStorage.getItem("exames") != null) {
+      solicitacoes = JSON.parse(localStorage.getItem("exames"));
+    }
+    else {
+      solicitacoes = [];
+    }
+  
+    let solic = {
+      id: solicitacoes.length + 1,
+      paciente: document.getElementById('tecno').value,
+      dataExame: document.getElementById('data').value,
+      exame: document.getElementById('solicExames').value,
+      med: document.getElementById('solic_med').value,
+      status: "ativo"
+    }
+  
+    solicitacoes.push(solic);
+    document.forms[0].reset();
+    localStorage.setItem("exames", JSON.stringify(solicitacoes));
+  });
 })
-
-
