@@ -13,6 +13,7 @@
 </head>
 
 <body onload="onload()">
+  <input type="hidden" id="escolhaTabela">
   <main>
     <div class="grid">
       <!-- MENU LATERAL -->
@@ -96,7 +97,44 @@
           <div class="listar-exames">
             <h1>Listar Exames</h1>
 
-            <table>
+            <label id="filtroExames">Fitro de Exames por</label>
+            <select name="filtroTipo" id="filtroTipo">
+              <option value="Selecione">Selecione</option>
+              <option value="Paciente">Paciente</option>
+              <option value="Tipo de Exame">Tipo de Exame</option>
+            </select>
+
+            <div id="filtroExame" style="display: none;">
+              <label>Exame</label>
+              <select name="selectFiltroExame" id="selectFiltroExame">
+                <option value="Selecione">Selecione</option>
+                <option value="Colonoscopia">Colonoscopia</option>
+                <option value="Ressonância Magnética">Ressonância Magnética</option>
+                <option value="Ressonância Magnética de Extremidades">Ressonância Magnética de Extremidades</option>
+                <option value="Tomografia">Tomografia</option>
+                <option value="TomoGrafia Multislice">TomoGrafia Multislice</option>
+                <option value="Mamografia">Mamografia</option>
+                <option value="Mamografia por Estereotaxiaa">Mamografia por Estereotaxia</option>
+                <option value="Raio-X">Raio-X</option>
+                <option value="Densitometria Óssea">Densitometria Óssea</option>
+                <option value="Ultrassonografia">Ultrassonografia</option>
+                <option value="Endoscopia">Endoscopia</option>
+                <option value="Ecocardiograma bidimensional">Ecocardiograma bidimensional</option>
+              </select>
+            </div>
+
+            <div id="filtroPaciente" style="display: none;">
+              <label>Paciente</label>
+              <select name="selectFiltroPaciente" id="selectFiltroPaciente">
+                <option value="Selecione">Selecione</option>
+                <option value="Bruna">Bruna</option>
+                <option value="Mario">Mario</option>
+                <option value="Carol">Carol</option>
+                <option value="Julia">Julia</option>
+              </select>
+            </div>
+
+            <table id="tabelaExames">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -108,7 +146,7 @@
                 </tr>
               </thead>
               <tbody>
-                
+
               </tbody>
             </table>
           </div>
