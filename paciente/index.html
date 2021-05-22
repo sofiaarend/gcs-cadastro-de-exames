@@ -50,7 +50,20 @@
         <div class="right-container">
           <div class="lista">
             <h4>Listar autorizações</h4>
-            <input id="caixainput" type="text" />
+            <table id="tablePaciente">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Médico</th>
+                  <th>Paciente</th>
+                  <th>Data da Solicitação</th>
+                  <th>Exame</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
           </div>
 
           <div class="exame">
@@ -59,9 +72,8 @@
             <p>id</p>
             <input id="idinput" type="text" />
             <br /><br />
-            <button id="btn-button">Marcar como feito</button>
+            <button id="btn-paciente">Marcar como feito</button>
           </div>
-          
         </div>
         <!-- End Right Container -->
       </div>
